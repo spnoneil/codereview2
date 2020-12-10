@@ -6,18 +6,22 @@ $(document).ready(function() {
         q4 = parseInt(document.querySelector('input[name = "q4"]:checked').value);
         q5 = parseInt(document.querySelector('input[name = "q5"]:checked').value);
         q6 = parseInt(document.querySelector('input[name = "q6"]:checked').value);
-        total = q1 + q2 + q3 + q4 + q5 + q6;;
+        total = q1 + q2 + q3 + q4 + q5 + q6;
 
         if (total < 10) {
             event.preventDefault();
             $("#answer1, #form1, #back").toggle();
         } else if (total >= 10 && total < 14) {
             event.preventDefault();
-            $("#answer1, #form1, #back").toggle();
+            $("#answer2, #form1, #back").toggle();
         } else if (total >= 14) {
             event.preventDefault();
-            $("#answer1, #form1, #back").toggle();
+            $("#answer3, #form1, #back").toggle();
         }
     }
-
+    document.getElementById("back").onclick = function() {
+        $("#form1, #back").toggle();
+        $("#answer1, #answer2, #answer3").hide();
+        $('input[type="radio"]').prop('checked', false);
+    }
 });
