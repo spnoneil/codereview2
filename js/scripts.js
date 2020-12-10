@@ -1,5 +1,6 @@
 $(document).ready(function() {
     document.getElementById("form1").onsubmit = function() {
+        window.scrollTo(500, 0);
         q1 = parseInt(document.querySelector('input[name = "q1"]:checked').value);
         q2 = parseInt(document.querySelector('input[name = "q2"]:checked').value);
         q3 = parseInt(document.querySelector('input[name = "q3"]:checked').value);
@@ -23,5 +24,6 @@ $(document).ready(function() {
         $("#form1, #back").toggle();
         $("#answer1, #answer2, #answer3").hide();
         $('input[type="radio"]').prop('checked', false);
+        window.scrollTo(0, 0);
     }
 });

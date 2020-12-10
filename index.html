@@ -11,8 +11,11 @@
 
 <body>
     <div class="container">
-        <h1>Which programming language is best for you?</h1>
-        <h4>Take our short quiz to find out!</h4>
+        <div class="jumbotron">
+            <img src="img/banner.jpg" alt="W3rd!" id="jumbobg">
+            <h1>Which <strong>programming language</strong> is best for you?</h1>
+            <h4>Take our <em>short quiz</em> to find out!</h4>
+        </div>
         <br>
         <form id="form1">
             <ul>
@@ -85,6 +88,7 @@
                     <input type="radio" id="petChoice3" name="q5" value="3" required>
                     <label for="petChoice3">I DON'T HAVE A SOUL</label>
                 </div>
+                <br>
                 <li>
                     <p>Finally, tell me which programming language sounds MOST DAUNTING to you?</p>
                 </li>
@@ -102,17 +106,26 @@
             <button class="btn btn-primary" id="submitbtn">Submit yr answer, CHUM........P!</button>
         </form>
         <div id="answer1">
+            <span class="answerHeader">YOUR MAGIC 8-BALL:</span>
+            <br>
             <img src="img/py.jpg" alt="Py" width="300" height="300" id="py">
             <img src="img/thon.jpg" alt="Thon" width="300" height="300" id="thon">
-            <br><span class="answers">Whether it is, or it is not, you should try (a) Py-thon!</span></div>
+            <br><span class="answers">Whether it is, or it is not, you should try (a) Py-thon!</span>
+        </div>
         <div id="answer2">
+            <span class="answerHeader">MEKHA-LEKHA-HI, MEKHA-HINEY-HO:</span>
+            <br>
             <img src="img/c.jpg" alt="C" width="300" height="300" id="c">
             <img src="img/sharp.jpg" alt="#" width="300" height="300" id="sharp">
-            <br><span class="answers">Jane loves C#. C# run! Run, #, run!</span></div>
+            <br><span class="answers">C Jane. Jane loves #. C# run! Run, #, run!</span>
+        </div>
         <div id="answer3">
+            <span class="answerHeader">SURVEY SEZ:</span>
+            <br>
             <img src="img/java.jpg" alt="Java" width="300" height="300" id="java">
             <img src="img/script.jpg" alt="Script" width="300" height="300" id="script">
-            <br><span class="answers">Your future is in Java! And scripts! Go on with yr bad self, Jim Jarmusch!</span></div>
+            <br><span class="answers">Your future is in java! And scripts! Go on with yr bad self, Jim Jarmusch!</span>
+        </div>
         <button class="btn btn-success" id="back">Try it again, pal!</button>
     </div>
 </body>
